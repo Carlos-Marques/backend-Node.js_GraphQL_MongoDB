@@ -1,0 +1,27 @@
+{
+  "name": "backend-Node.js_GraphQL_MongoDB",
+  "version": "1.0.0",
+  "description": "Boiler plate for backend using Node.js, GraphQL and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlos-Marques/backend-Node.js_GraphQL_MongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlos-Marques/backend-Node.js_GraphQL_MongoDB/issues"
+  },
+  "homepage": "https://github.com/Carlos-Marques/backend-Node.js_GraphQL_MongoDB#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "mongoose": "^5.4.9"
+  }
+}
