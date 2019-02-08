@@ -17,7 +17,7 @@ services:
   mongo:
     container_name: graphqlmongo
 #pull the official mongodb image from DockerHub registry
-    image: mongo
+    image: mvertes/alpine-mongo
 #mount the host directory for persistent storage
     volumes:
       - ./data:/data/db
