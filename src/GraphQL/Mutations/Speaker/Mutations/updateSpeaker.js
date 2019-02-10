@@ -2,7 +2,7 @@ var GraphQLNonNull = require("graphql").GraphQLNonNull;
 var GraphQLString = require("graphql").GraphQLString;
 
 var speakerType = require("../../../Types/SpeakerType");
-var speakerModel = require("../../../../MongoDB/Speaker");
+var speakerModel = require("../../../../MongoDB/speakerModel");
 
 exports.updateSpeaker = {
   type: speakerType.speakerType,

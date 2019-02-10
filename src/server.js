@@ -3,9 +3,8 @@ const app = express();
 const mongoose = require('mongoose');
 const graphqlExpress = require("express-graphql");
 
-const speakerSchema = require('./GraphQL/Schemas/SpeakerSchema').SpeakerSchema;
+const Schema = require('./GraphQL/Schema/Schema').Schema;
 
-//connecting to mongodb
 mongoose.connect('mongodb://mongo/myappdb',(err)=>{
     if (err) throw err;
     console.log("Connected to MongoDB");
@@ -17,9 +16,8 @@ app.listen(app.get('port'), ()=> {
     console.log("Node app is running at localhost:" + app.get('port'))
 });
 
-//add the schema to graphql-express 
 app.use('/graphql', graphqlExpress({
-    schema: speakerSchema,
+    schema: Schema,
     rootValue: global,
     graphiql: true
 }));
